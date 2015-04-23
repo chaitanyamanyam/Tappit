@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<title>Tapp It</title>
+		<link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="http://dc-js.github.io/dc.js/css/dc.css"/>
+    	<link href="/css/sticky-footer.css" rel="stylesheet">
+    </style>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="page-header">
+
+				<h1 style="display:inline">TappIt <span class="glyphicon glyphicon-book" aria-hidden="true"></span></h1>
+				<div style="display:inline">
+					<a href="/main.html">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						Home
+					</a>
+					<a href="#">
+						<span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+						Download report
+					</a>
+					<a href="/report.html">
+						<span class="glyphicon glyphicon glyphicon-signal" aria-hidden="true"></span>
+						View report
+					</a>
+					<a href="/login.html">
+						<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+						Logout
+					</a>
+				</div>
+			</div>
+			<div>
+				<h4>Log your work</h4>
+				<div style="margin-left:auto;margin-right:auto;width:30%;">
+					<div class="btn-group">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+					    Project
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					  	<li role="presentation" class="dropdown-header">Select a project</li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HCI</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">AI</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">IV</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Add new...</a></li>
+					  </ul>
+					</div>
+					<div class="btn-group">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+					    Activity
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					  	<li role="presentation" class="dropdown-header">Select an activity</li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Read</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Think</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Write</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Add new...</a></li>
+					  </ul>
+					</div>
+					<div class="btn-group">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+					    Expected Duration
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					  	<li role="presentation" class="dropdown-header">Select a duration</li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">15 mins</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">30 mins</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 hour</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Add new...</a></li>
+					  </ul>
+					</div>
+					<p></p>
+					<div>
+						<div class="radio" style="display:inline">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="optionsRadios1" value="present" checked>
+						    Log current work
+						  </label>
+						</div>
+						<div class="radio" style="display:inline">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="optionsRadios2" value="past">
+						    Log past work
+						  </label>
+						</div>
+					</div>
+				</div>
+
+				<div id="clock-action-button">
+					<svg id="stopwatch" width="100%" height="60%">
+					  <circle cx="0" cy="0" r="150" fill="transparent" stroke="steelblue" stroke-width="3"></circle>
+					  <text id="time" x="0" y="0" 
+					        font-family="AvenirLTStd-Light" 
+					        font-size="30"
+					        fill="#e58757">00:00:00
+					  </text>
+					  <text id="timer-action" x="0" y="0" 
+					        font-family="AvenirLTStd-Light" 
+					        font-size="10"
+					        fill="#e58757">Start</text>
+					</svg>
+					<div id="submitted-alert" class="alert alert-success" role="alert" style="opacity:0;">
+						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+						Your work has been successfully logged
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p class="muted credit"><p>© We are the best group. 2014</p></p>
+		</div>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://dc-js.github.io/dc.js/js/d3.js"></script>
+		<script type="text/javascript" src="http://dc-js.github.io/dc.js/js/crossfilter.js"></script>
+		<script type="text/javascript" src="http://dc-js.github.io/dc.js/js/dc.js"></script>
+		<script type="text/javascript" src="http://dc-js.github.io/dc.js/js/colorbrewer.js"></script>
+		<script type="text/javascript" src="stopwatch.js"></script>
+	</body>
+
+</html>

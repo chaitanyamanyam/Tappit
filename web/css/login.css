@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-size: 100%;
+    color: inherit;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    border: none;
+    background: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #ecf0f1;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wrapper {
+    width: 500px;
+    margin: auto;
+    height: 300px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px -2px #27ae60, 0 0 10px -4px #c0392b;
+    border-radius: 5px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 25px;
+}
+
+.title {
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.txt {
+    box-shadow: 0 0 2px #bdc3c7;
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 12px;
+    transition: all .3s;
+}
+
+.btn {
+    background-color: #bdc3c7;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    color: #FFF;
+}
+
+.txt:hover {
+    box-shadow: 0 0 3px #2c3e50;
+}
+
+.txt:focus {
+    box-shadow: 0 0 3px #2980b9;
+}

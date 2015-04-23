@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>Tapp It</title>
+		<link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="http://dc-js.github.io/dc.js/css/dc.css"/>
+    	<link href="/css/sticky-footer.css" rel="stylesheet">
+    	<style>
+        #work-history-chart g.y {
+            display: none;
+        }
+    	</style>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="page-header">
+				<h1>TappIt <span class="glyphicon glyphicon-book" aria-hidden="true"></span></h1>
+				<a href="/dialogHome.php">
+					<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+					Home
+				</a>
+				<a href="/report.php">
+					<span class="glyphicon glyphicon glyphicon-signal" aria-hidden="true"></span>
+					View report
+				</a>
+				<a href="/logout.php">
+					<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+					Logout
+				</a>
+			</div>
+
+			
+			<script type="text/javascript">
+			    //Export to CSV file
+			</script>
+			<p>
+				<h2>TappIt</h2> 
+				<a id="download_report" href="#">
+					<span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+					Download report
+				</a>
+			</p>
+			<div id="work-history-chart"></div>
+			<div id="project-history-chart" style="position:relative">
+				<div id="project-estimated-chart" style="position:absolute"></div>
+			</div>
+			<div>
+				<div id="project-dedication-chart"></div>
+				<div id="activity-dedication-chart"></div>
+			</div>
+
+			<div class="row">
+				<table class="table table-hover dc-data-table">
+			        <thead>
+			        <tr class="header">
+			            <th>Date</th>
+			            <th>Project name</th>
+			            <th>Acivity</th>
+			            <th>Estimated time</th>
+			            <th>Dedicated time</th>
+			        </tr>
+			        </thead>
+			    </table>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p class="muted credit"><p>© We are the best group. 2014</p></p>
+		</div>
+
+		<script type="text/javascript" src="http://dc-js.github.io/dc.js/js/d3.js"></script>
+		<script type="text/javascript" src="http://dc-js.github.io/dc.js/js/crossfilter.js"></script>
+		<script type="text/javascript" src="http://dc-js.github.io/dc.js/js/dc.js"></script>
+		<script type="text/javascript" src="http://dc-js.github.io/dc.js/js/colorbrewer.js"></script>
+		<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="report_html.js"></script>
+
+	</body>
+
+</html>
