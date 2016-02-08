@@ -4,6 +4,7 @@
     session_start();
 
 // Check, if user is already login, then jump to secured page
+    // Checking the entire directory
 if (isset($_SESSION['sess_username'])) {
 header('Location: dialogHome.php');
 }
